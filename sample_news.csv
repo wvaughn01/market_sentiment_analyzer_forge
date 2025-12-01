@@ -1,0 +1,9 @@
+url,date,content,source,source_type,sentiment
+https://example.com/article1,2024-09-07T14:23:00+00:00,Apple reports record iPhone 15 Pro sales in first quarter. Analysts raise price targets. $AAPL,Financial Times,alpha_vantage,0.6
+https://example.com/article2,2024-09-08T08:15:00+00:00,Apple supplier reports production challenges but maintains delivery targets for Q4. #AAPL,Reuters,newsapi,-0.2
+https://example.com/article3,2024-09-09T19:45:00+00:00,Tech analysts predict strong holiday season for Apple's new product lineup. Market share expected to grow.,Bloomberg,alpha_vantage,0.8
+https://example.com/article4,2024-09-11T11:30:00+00:00,Apple faces regulatory scrutiny in EU over App Store policies. Stock dips on news.,CNBC,newsapi,-0.4
+https://example.com/article5,2024-07-21T16:20:00+00:00,Tesla breaks production records in Q3. New gigafactory exceeds expectations. $TSLA,Wall Street Journal,alpha_vantage,0.7
+https://example.com/article6,2024-07-22T09:10:00+00:00,"Tesla recalls 50,000 vehicles due to software glitch. Fix available via OTA update.",Reuters,newsapi,-0.3
+https://example.com/article7,2024-07-24T13:45:00+00:00,Tesla's FSD Beta shows significant improvements in latest testing. Analysts bullish on autonomous future.,Bloomberg,alpha_vantage,0.5
+https://example.com/article8,2024-07-25T15:30:00+00:00,Electric vehicle competition intensifies as legacy automakers ramp up production. Tesla's market share under pressure.,Financial Times,newsapi,-0.2

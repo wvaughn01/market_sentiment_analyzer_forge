@@ -1,0 +1,28 @@
+# Core data and math libraries
+pandas==2.2.2
+numpy==1.26.4
+
+# Financial data access and news
+yfinance==0.2.40
+alpha_vantage==2.3.1
+newsapi-python==0.2.7
+praw==7.7.1
+
+# Sentiment analysis
+vaderSentiment==3.3.2
+
+# Machine learning
+scikit-learn==1.5.1
+xgboost==2.0.3
+
+# Visualization (optional but useful for future analysis)
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# System utilities
+psutil==5.9.8
+
+# Jupyter Notebook (if using VS Code Notebooks)
+ipykernel==6.29.4
+jupyterlab==4.1.5
+
