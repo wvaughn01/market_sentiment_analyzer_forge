@@ -5,11 +5,8 @@ import requests
 from datetime import datetime, timedelta
 import pandas as pd
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
-from dotenv import load_dotenv
 from newsapi import NewsApiClient
-
-# Load environment variables from .env file if it exists
-load_dotenv()
+import streamlit as st
 
 # Only import API clients if we're not in mock mode
 USE_MOCK = os.environ.get('USE_MOCK_SCRAPE', '0') == '1'
@@ -23,8 +20,9 @@ class FinancialNewsAggregator:
         self.use_mock = use_mock if use_mock is not None else os.environ.get('USE_MOCK_SCRAPE', '0') == '1'
         
         if not self.use_mock:
-            self.alpha_vantage_key = alpha_vantage_key or os.environ.get('ALPHA_VANTAGE_KEY')
-            self.newsapi_key = newsapi_key or os.environ.get('NEWS_API_KEY')
+            self.alpha_vantage_key = alpha_vantage_key or st.secrets.get("ALPHA_VANTAGE_API_KEY")
+            self.newsapi_key = newsapi_key or st.secrets.get("NEWS_API_KEY")
+
             
             # Initialize NewsAPI client if key is available
             if self.newsapi_key:
